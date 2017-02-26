@@ -1,7 +1,6 @@
 source ~/.zplug/init.zsh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/share/git-core/contrib/diff-highlight:/Users/R/.nodebrew/current/bin"
-export HISTFILE=${HOME}/.zsh_history
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/share/git-core/contrib/diff-highlight:/Users/R/.nodebrew/current/bin:/Users/R/.zplug/bin"
 
 alias c='cd $(ls -F -A | grep /|peco)'
 alias get='ghq get'
@@ -27,6 +26,7 @@ zplug "stedolan/jq", \
   rename-to:jq
 
 zplug "zsh-users/zsh-completions"
+zplug "lib/history.zsh", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "rxon/84e4bbed8309004303364e8bb78726a1", \
