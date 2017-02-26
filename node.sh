@@ -12,7 +12,7 @@ libraries=(
   # webpack
   # webpack-bundle-size-analyzer
   # xo
-  yarn
+  # yarn
 )
 
 echo "Type latest node version : "
