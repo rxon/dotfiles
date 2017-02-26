@@ -1,0 +1,31 @@
+# Restart automatically if the computer freezes
+sudo systemsetup -setrestartfreeze on
+
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array
+
+
+# Google Chrome & Google Chrome Canary
+# Disable the all too sensitive backswipe on trackpads
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
+# Disable the all too sensitive backswipe on Magic Mouse
+defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
+# Use the system-native print preview dialog
+defaults write com.google.Chrome DisablePrintPreview -bool true
+defaults write com.google.Chrome.canary DisablePrintPreview -bool true

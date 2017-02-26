@@ -1,0 +1,14 @@
+[user]
+	name = rxon
+	email = rxon@users.noreply.github.com
+[alias]
+	l = log --oneline --stat
+[status]
+	short = true
+	branch = true
+[pager]
+	log = diff-highlight | less
+	diff = diff-highlight | less
+	show = diff-highlight | less
+[ghq]
+    root = ~/.projects
