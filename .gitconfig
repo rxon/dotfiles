@@ -11,4 +11,4 @@
 	diff = diff-highlight | less
 	show = diff-highlight | less
 [ghq]
-    root = ~/.projects
+  root = ~/.projects
