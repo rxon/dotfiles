@@ -8,5 +8,5 @@ repos=`curl -fsSL https://api.github.com/users/$ghid/repos | jq -r '.[].clone_ur
 
 for i in $repos
 do
-  get $i
+  ghq get $i
 done
