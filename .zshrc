@@ -7,6 +7,12 @@ alias get='ghq get'
 
 zplug "zplug/zplug", hook-build:'zplug --self-manage'
 
+zplug "yous/vanilli.sh"
+zplug "zsh-users/zsh-syntax-highlighting"
+
+zplug "plugins/history-substring-search", from:oh-my-zsh
+zplug "rupa/z", use:"z.sh"
+
 zplug "motemen/ghq", \
   as:command, \
   from:gh-r, \
@@ -24,10 +30,6 @@ zplug "stedolan/jq", \
   from:gh-r, \
   as:command, \
   rename-to:jq
-
-zplug "zsh-users/zsh-completions"
-zplug "lib/history.zsh", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "rxon/84e4bbed8309004303364e8bb78726a1", \
   from:gist, \
