@@ -13,24 +13,6 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "plugins/history-substring-search", from:oh-my-zsh
 zplug "rupa/z", use:"z.sh"
 
-zplug "motemen/ghq", \
-  as:command, \
-  from:gh-r, \
-  rename-to:ghq
-
-zplug "peco/peco", \
-  as:command, \
-  from:gh-r
-
-zplug "wg/wrk", \
-  as:command, \
-  hook-build:"make"
-
-zplug "stedolan/jq", \
-  from:gh-r, \
-  as:command, \
-  rename-to:jq
-
 zplug "rxon/84e4bbed8309004303364e8bb78726a1", \
   from:gist, \
   as:command, \

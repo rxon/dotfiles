@@ -8,6 +8,7 @@ packages=(
   file-icons
   linter
   linter-eslint
+  linter-textlint
   pigments
   # project-manager
   react

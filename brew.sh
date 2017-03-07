@@ -5,21 +5,22 @@ packages=(
   # asciinema
   # bash
   # curl
-  # ghq
+  ghq
   git
   # go
   # hugo
   # imagemagick
+  jq
   # micro
   nodebrew
   pandoc
-  # peco
+  peco
   # python
   # python3
   # tmux
   # vim
   # wifi-password
-  # wrk
+  wrk
   yarn
   zsh
 )
