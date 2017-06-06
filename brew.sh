@@ -18,7 +18,7 @@ packages=(
   # python
   # python3
   # tmux
-  # vim
+  vim
   # wifi-password
   wrk
   yarn

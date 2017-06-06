@@ -11,4 +11,5 @@ done
 curl -fsSL zplug.sh/installer | zsh
 
 curl -fsSL $url/.zshrc >.zshrc
+curl -fsSL $url/.vimrc >.vimrc
 curl -fsSL $url/.gitconfig >>.gitconfig
