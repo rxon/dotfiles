@@ -9,7 +9,6 @@ endif
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
-    call dein#add('scrooloose/nerdtree')
     call dein#add('w0ng/vim-hybrid')
     call dein#add('tyru/open-browser.vim')
     call dein#add('vim-airline/vim-airline')
@@ -52,11 +51,6 @@ set expandtab
 
 filetype plugin indent on
 syntax on
-
-let NERDTreeShowHidden = 1
-let NERDTreeMinimalUI = 1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 set background=dark
 colorscheme hybrid

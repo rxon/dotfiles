@@ -21,7 +21,7 @@ packages=(
   vim
   # wifi-password
   wrk
-  yarn
+  # yarn
   zsh
 )
 

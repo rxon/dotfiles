@@ -23,4 +23,4 @@ echo "Installing node and libraries..."
 nodebrew install-binary $NODE_VAR
 nodebrew use $NODE_VAR
 
-yarn global add ${libraries[@]}
+npm i -g ${libraries[@]}
