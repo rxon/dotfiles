@@ -6,12 +6,13 @@ packages=(
   atom-beautify
   autocomplete-paths
   file-icons
-  linter
-  linter-eslint
-  linter-textlint
+  # linter
+  # linter-eslint
+  # linter-textlint
+  one-vibrancy
   pigments
   # project-manager
-  react
+  # react
 )
 
 echo "Installing atom packages..."

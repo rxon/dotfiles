@@ -5,24 +5,29 @@ packages=(
   # asciinema
   # bash
   # curl
-  ghq
+  # ghq
   git
   # go
   # hugo
-  # imagemagick
+  imagemagick
   jq
   # micro
   nodebrew
   pandoc
-  peco
+  # peco
   # python
   # python3
   # tmux
   vim
   # wifi-password
-  wrk
+  # wrk
   # yarn
   zsh
+  mactex
+
+  ruby
+  go
+  python
 )
 
 echo "Installing homebrew and packages..."

@@ -18,6 +18,8 @@ if dein#load_state(s:dein_dir)
     "call dein#add('myhere/vim-nodejs-complete')
     call dein#add('bronson/vim-trailing-whitespace')
     call dein#add('rhysd/accelerated-jk')
+    call dein#add('vim-scripts/vim-auto-save')
+    call dein#add('thinca/vim-quickrun')
   call dein#end()
   call dein#save_state()
 endif
@@ -56,6 +58,18 @@ set background=dark
 colorscheme hybrid
 
 autocmd BufWritePre * :FixWhitespace
+
+function! MaybeCtrlP()
+    if argc() == 1 && isdirectory(argv()[0])
+        " Uncomment this to remove the Netrw buffer (optional)
+        " execute "bdelete"
+        execute "CtrlP"
+    endif
+endfunction
+
+autocmd VimEnter * :call MaybeCtrlP()
+
+let g:auto_save = 1
 
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)

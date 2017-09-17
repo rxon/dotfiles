@@ -9,7 +9,7 @@ casks=(
   # docker
   # firefox
   flux
-  github-desktop
+  # github-desktop
   google-chrome
   # google-chrome-canary
   iterm2

@@ -1,26 +1,17 @@
-#!/usr/bin/env bash
-set -e
+#!/usr/bin/env sh
 
-libraries=(
-  # create-react-app
-  # eslint
-  # gifify
-  # nodemon
-  now
-  npm-run
-  # textlint
-  # webpack
-  # webpack-bundle-size-analyzer
-  # xo
-  # yarn
-)
+# To update node and npm with nodebrew.
+# Run this file with `sudo`.
+# Be sure to installed npm
 
 echo "Type latest node version : "
 read NODE_VAR
 
-echo "Installing node and libraries..."
-
+echo Installing node $NODE_VAR
 nodebrew install-binary $NODE_VAR
 nodebrew use $NODE_VAR
 
-npm i -g ${libraries[@]}
+echo Installing npm libraries to global.
+npm i -g --unsafe-perm nodemon now
+
+echo -e "\033[0;36mFinish!\033[0;39m"
